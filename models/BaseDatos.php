@@ -1,6 +1,6 @@
 <?php
 
-    class BD {
+    class BaseDatos{
 
         //ATRIBUTOS=VARIABLES=DATOS
         public $usuario="root";
@@ -48,7 +48,7 @@
 
             }catch(PDOException $error){
 
-                 die("Tenemos un problema con los datos ".$error->getMessage());
+                die("Tenemos un problema con los datos ".$error->getMessage());
 
             }
 

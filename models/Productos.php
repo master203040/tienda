@@ -1,6 +1,6 @@
 <?php
 
-    class Producto{
+    class Productos{
 
         //variable = datos = atributos
         public $nombre;
@@ -25,7 +25,7 @@
         }
 
         //acciones = funciones = metodos
-        public function registrar(){
+        public function registro(){
 
             $consultaSQL= "INSERT INTO productos(nombre,valor,tipo,foto,inventario,descripcion)
             VALUE ('$this->nombre','$this->valor','$this->tipo','$this->foto','$this->inventario','$this->descripcion')";

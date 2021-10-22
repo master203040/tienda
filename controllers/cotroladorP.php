@@ -3,11 +3,11 @@
   if(!isset($_SESSION)){
     session_start();
   }
-  
+
   //incluir el modelo de BaseDatos
   //incluir el modelo Productos
-  include("../models/BD.php");
-  include("../models/Producto.php");
+  include("../models/BaseDatos.php");
+  include("../models/Productos.php");
     
   //2.recoger los datos de la visita 
   if(isset($_POST["boton"])){
@@ -21,12 +21,12 @@
 
 
     
-    //3. Creo un objeto(variable) del modelo EMPLEADO
-    $producto =new Producto($nombre,$valor,$tipo,$foto,$inventario,$descripcion);
+    //3. Creo un objeto(variable) del modelo Productos
+    $producto = new Productos($nombre,$valor,$tipo,$foto,$inventario,$descripcion);
 
     //4. Ejecutar el metodo insertar registro de la bd
-    $base = new BD();
-    $resultado=$base->insertarRegistro($producto->registrar());
+    $basedatos = new BaseDatos();
+    $resultado = $basedatos->insertarRegistro($producto->registro());
 
     //5. valido el resultado
     if($resultado){
