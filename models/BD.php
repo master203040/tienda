@@ -1,6 +1,6 @@
 <?php
 
- class BaseDatos {
+    class BD {
 
         //ATRIBUTOS=VARIABLES=DATOS
         public $usuario="root";
@@ -13,13 +13,14 @@
         public function __construct(){}
 
         //METODOS=ACCIONES=FUNCIONES
-        public function conectarConBD(){
+        public function conectar(){
 
             //MANEJO DE ERRORES
             try{
 
-                $datosGeneralesBD=$this->servidorBD.$this->nombreBD;
-                $conexion= new PDO($datosGeneralesBD,$this->usuario,$this->passwordBD);
+                $datos=$this->servidorBD.$this->nombreBD;
+                $conexion= new PDO($datos,$this->usuario,$this->passwordBD);
+
                 echo("exito conectandonos a la bd");
                 return $conexion;
 
@@ -35,7 +36,7 @@
 
             try{
                 //1. construir un puente con la bd
-                $conexion=$this->conectarConBD();
+                $conexion=$this->conectar();
 
                 //2. preparar la bd para que reciba mi consulta
                 $operacion=$conexion->prepare($consultaSQL);
@@ -47,7 +48,7 @@
 
             }catch(PDOException $error){
 
-                 die("Tenemos un problema ".$error->getMessage());
+                 die("Tenemos un problema con los datos ".$error->getMessage());
 
             }
 
@@ -57,7 +58,7 @@
 
              try{
                 //1. construir un puente con la bd
-                $conexion=$this->conectarConBD();
+                $conexion=$this->conectar();
 
                 //2. preparar la bd para que reciba mi consulta
                 $operacion=$conexion->prepare($consultaSQL);
