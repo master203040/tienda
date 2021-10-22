@@ -7,19 +7,19 @@
         public $valor;
         public $tipo;
         public $foto;
-        public $inventatio;
+        public $inventario;
         public $descripcion;
 
 
         //metodo especial constructor
 
-        public function __construct($nombreFormulario,$valorFormulario,$tipoFormulario,$fotoFormulario,$inventatioFormulario,$descripcionFormulario){
+        public function __construct($nombreFormulario,$valorFormulario,$tipoFormulario,$fotoFormulario,$inventarioFormulario,$descripcionFormulario){
 
             $this->nombre = $nombreFormulario;
             $this->valor = $valorFormulario;
             $this->tipo = $tipoFormulario;
             $this->foto = $fotoFormulario;
-            $this->inventario = $inventatioFormulario;
+            $this->inventario = $inventarioFormulario;
             $this->descripcion = $descripcionFormulario;
 
         }
@@ -28,7 +28,7 @@
         public function registrar(){
 
             $consultaSQL= "INSERT INTO productos(nombre,valor,tipo,foto,inventario,descripcion)
-            VALUE ('$this->nombre','$this->valor','$this->tipo','$this->foto','$this->inventario',$this->descripcion)";
+            VALUE ('$this->nombre','$this->valor','$this->tipo','$this->foto','$this->inventario','$this->descripcion')";
 
             return $consultaSQL;
 

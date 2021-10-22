@@ -3,8 +3,7 @@
   if(!isset($_SESSION)){
     session_start();
   }
-
-
+  
   //incluir el modelo de BaseDatos
   //incluir el modelo Productos
   include("../models/BD.php");
