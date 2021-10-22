@@ -41,11 +41,11 @@
         <div class="container mt-5">
             <div class="row d-flex justify-content-center">
                 <div class="col-12 col-md-5">
-                    <form action="../controllers/cotroladorU.php" method="POST">
+                    <form action="../controllers/cotroladorP.php" method="POST">
                         <h3>Registro de Productos</h3>
                         <div class="mb-3 mt-5">
                             <label class="form-label">Nombres del producto</label>
-                            <input type="text" class="form-control" name="nombres">
+                            <input type="text" class="form-control" name="nombre" autofocus>
                         </div>
 
                         <div class="mb-3">
@@ -73,7 +73,7 @@
                             <input type="text" class="form-control" name="inventario">
                         </div>
 
-                        <button type="submit" class="btn btn-primary" name="button">registrar</button>
+                        <button type="submit" class="btn btn-primary" name="boton">registrar</button>
             
                     </form>
 
