@@ -26,7 +26,7 @@
 
     //4. Ejecutar el metodo insertar registro de la bd
     $basedatos = new BaseDatos();
-    $resultado = $basedatos->insertarRegistro($producto->registro());
+    $resultado = $basedatos->insertarRegistro($producto->registrar());
 
     //5. valido el resultado
     if($resultado){

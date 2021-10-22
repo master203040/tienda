@@ -25,7 +25,7 @@
         }
 
         //acciones = funciones = metodos
-        public function registro(){
+        public function registrar(){
 
             $consultaSQL= "INSERT INTO productos(nombre,valor,tipo,foto,inventario,descripcion)
             VALUE ('$this->nombre','$this->valor','$this->tipo','$this->foto','$this->inventario','$this->descripcion')";
