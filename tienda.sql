@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 22-10-2021 a las 06:32:41
+-- Tiempo de generación: 26-10-2021 a las 19:06:43
 -- Versión del servidor: 10.4.14-MariaDB
 -- Versión de PHP: 7.2.34
 
@@ -32,17 +32,10 @@ CREATE TABLE `productos` (
   `nombre` varchar(50) NOT NULL,
   `valor` double NOT NULL,
   `tipo` varchar(50) NOT NULL,
-  `foto` longblob NOT NULL,
+  `foto` varchar(230) NOT NULL,
   `inventario` int(11) NOT NULL,
   `descripcion` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Volcado de datos para la tabla `productos`
---
-
-INSERT INTO `productos` (`id`, `nombre`, `valor`, `tipo`, `foto`, `inventario`, `descripcion`) VALUES
-(0, 'Equipos de Refrigeracion', 666, 'tecnologico', 0x6379636c697374732e6a7067, 26, 'dfer');
 
 --
 -- Índices para tablas volcadas
@@ -53,6 +46,16 @@ INSERT INTO `productos` (`id`, `nombre`, `valor`, `tipo`, `foto`, `inventario`, 
 --
 ALTER TABLE `productos`
   ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `productos`
+--
+ALTER TABLE `productos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

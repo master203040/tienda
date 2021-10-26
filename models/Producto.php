@@ -1,6 +1,6 @@
 <?php
 
-    class Productos{
+    class Producto{
 
         //variable = datos = atributos
         public $nombre;
@@ -13,7 +13,7 @@
 
         //metodo especial constructor
 
-        public function __construct($nombreFormulario,$valorFormulario,$tipoFormulario,$fotoFormulario,$inventarioFormulario,$descripcionFormulario){
+        public function __construct($nombreFormulario,$valorFormulario,$tipoFormulario,$fotoFormulario, $inventarioFormulario,$descripcionFormulario){
 
             $this->nombre=$nombreFormulario;
             $this->valor=$valorFormulario;
@@ -27,7 +27,7 @@
         //acciones = funciones = metodos
         public function registrar(){
 
-            $consultaSQL= "INSERT INTO productos(nombre,valor,tipo,foto,inventario,descripcion) VALUES ('$this->nombre','$this->valor','$this->tipo','$this->foto','$this->inventario','$this->descripcion')";
+            $consultaSQL="INSERT INTO productos(nombre,valor,tipo,foto,inventario,descripcion) VALUES ('$this->nombre','$this->valor','$this->tipo','$this->foto','$this->inventario','$this->descripcion')";
            
 
             return $consultaSQL;

@@ -1,3 +1,13 @@
+<?php 
+
+ if(!isset($_SESSION)){
+        session_start();
+    }
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,7 +51,7 @@
         <div class="container mt-5">
             <div class="row d-flex justify-content-center">
                 <div class="col-12 col-md-5">
-                    <form action="../controllers/cotroladorP.php" method="POST">
+                    <form action="../controllers/cotroladorproductos.php" method="POST">
                         <h3>Registro de Productos</h3>
                         <div class="mb-3 mt-5">
                             <label class="form-label">Nombres del producto</label>
@@ -60,12 +70,12 @@
 
                         <div class="mb-3">
                             <label class="form-label">foto de producto</label>
-                            <input type="file" class="form-control" name="foto">
+                            <input type="text" class="form-control" name="foto">
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label">Descripcion</label>
-                            <textarea class="form-control" placeholder="Leave a comment here" name="descripcion"></textarea>
+                            <textarea class="form-control" name="descripcion"></textarea>
                         </div>
 
                         <div class="mb-3">
@@ -83,6 +93,24 @@
         </div>
     </main>
     
+     <section>
+      <?php if(isset($_SESSION['mensaje'])):?>
+        <div class="modal fade" id="modal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="exampleModalLabel">La tiendita del horror</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-dark">
+                <h5><?php echo($_SESSION['mensaje'])?></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      <?php unset($_SESSION['mensaje'])?>
+      <?php endif ?>
+    </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js"
          integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA=="
          crossorigin="anonymous" referrerpolicy="no-referrer">
