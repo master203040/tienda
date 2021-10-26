@@ -15,7 +15,8 @@
     $nombre = $_POST['nombre'];
     $valor = $_POST['valor'];
     $tipo = $_POST['tipo'];
-    $foto = $_POST['foto'];
+    //$foto = $_POST['foto'];
+    $foto = "na";
     $inventario = $_POST['inventario'];
     $descripcion = $_POST['descripcion'];
 
@@ -23,27 +24,27 @@
     
     //3. Creo un objeto(variable) del modelo Productos
     $producto = new Productos($nombre,$valor,$tipo,$foto,$inventario,$descripcion);
-
+    echo($producto->registrar());
     //4. Ejecutar el metodo insertar registro de la bd
     $basedatos = new BaseDatos();
     $resultado = $basedatos->insertarRegistro($producto->registrar());
 
     //5. valido el resultado
-    if($resultado){
+    //if($resultado){
 
       $_SESSION['mensaje'] ="exito en el registro";
 
-      header("Location:../views/registro.php");
+      //header("Location:../views/registro.php");
            
-
-    }else{
-      echo("upss... Tenemos problemas para registrar datos");
-    }
-
+    
+    //}else{
+     // echo("upss... Tenemos problemas para registrar datos");
+   // }
+    
     
   }else{
     echo("no deberias estar aquí");
   }
-
+  
 
 ?>

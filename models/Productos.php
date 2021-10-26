@@ -15,20 +15,20 @@
 
         public function __construct($nombreFormulario,$valorFormulario,$tipoFormulario,$fotoFormulario,$inventarioFormulario,$descripcionFormulario){
 
-            $this->nombre = $nombreFormulario;
-            $this->valor = $valorFormulario;
-            $this->tipo = $tipoFormulario;
-            $this->foto = $fotoFormulario;
-            $this->inventario = $inventarioFormulario;
-            $this->descripcion = $descripcionFormulario;
+            $this->nombre=$nombreFormulario;
+            $this->valor=$valorFormulario;
+            $this->tipo=$tipoFormulario;
+            $this->foto=$fotoFormulario;
+            $this->inventario=$inventarioFormulario;
+            $this->descripcion=$descripcionFormulario;
 
         }
 
         //acciones = funciones = metodos
         public function registrar(){
 
-            $consultaSQL= "INSERT INTO productos(nombre,valor,tipo,foto,inventario,descripcion)
-            VALUE ('$this->nombre','$this->valor','$this->tipo','$this->foto','$this->inventario','$this->descripcion')";
+            $consultaSQL= "INSERT INTO productos(nombre,valor,tipo,foto,inventario,descripcion) VALUES ('$this->nombre','$this->valor','$this->tipo','$this->foto','$this->inventario','$this->descripcion')";
+           
 
             return $consultaSQL;
 
