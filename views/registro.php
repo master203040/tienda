@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>document</title>
+    <title>Register product</title>
     <link rel="stylesheet" href="../public/estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
@@ -33,10 +33,6 @@
                         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
                             <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
                         </form>
-                        
-                        <button type="button" class="btn btn-primary me-md-2" data-bs-toggle="modal"data-bs-target="#staticBackdrop1">
-                        Sign up
-                        </button>
                         </div>
                         </div>
                         <div class="linea1 text-center text-white">
@@ -45,7 +41,6 @@
                 </div>
             </header>
     <main>
-        
         <div class="container mt-5 ">
             <div class="row d-flex justify-content-center">
                 <div class="col-12 col-md-5">
@@ -84,30 +79,16 @@
                         <button type="submit" class="btn btn-primary" name="boton">Check in</button>
             
                     </form>
-
-                </div>
-                
+                </div> 
             </div>
         </div>
     </main>
     
-     <section>
-      <?php if(isset($_SESSION['mensaje'])):?>
-        <div class="modal fade" id="modal" tabindex="-1">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header bg-primary text-white">
-                <h5 class="modal-title" id="exampleModalLabel">La tiendita del horror</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body text-dark">
-                <h5><?php echo($_SESSION['mensaje'])?></h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      <?php unset($_SESSION['mensaje'])?>
-      <?php endif ?>
+    <section>
+        <?php if(isset($_SESSION['mensaje'])):?>
+                
+            <?php unset($_SESSION['mensaje'])?>
+        <?php endif ?>
     </section>
     <script src="../public/js/modal.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js"

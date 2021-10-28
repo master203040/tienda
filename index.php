@@ -88,7 +88,7 @@
                                  <p>$150.000</p>
                                 <p class="card-text">Este producto es importado</p>
                                 <a href="#" class="btn btn-light"><i class="fas fa-shopping-cart"></i></a>
-                                <a href="#" class="btn btn-light"><i class="far fa-heart"></i></a>
+                                <a href="#" class="btn btn-light"><i class="fas fa-trash-alt"></i></a>
                             </div>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
                                 <p>$148.000</p>
                                 <p class="card-text">Este producto es importado</p>
                                 <a href="#" class="btn btn-light"><i class="fas fa-shopping-cart"></i></a>
-                                <a href="#" class="btn btn-light"><i class="far fa-heart"></i></a>
+                                <a href="#" class="btn btn-light"><i class="fas fa-trash-alt"></a>
                             </div>
                         </div>
                     </div>
@@ -112,7 +112,7 @@
                                 <p>$148.000</p>
                                 <p class="card-text">Este producto es importado</p>
                                 <a href="#" class="btn btn-light"><i class="fas fa-shopping-cart"></i></a>
-                                <a href="#" class="btn btn-light"><i class="far fa-heart"></i></a>
+                                <a href="#" class="btn btn-light"><i class="fas fa-trash-alt"></i></a>
                             </div>
                         </div>
                     </div>
@@ -124,7 +124,7 @@
                                 <p>$148.000</p>
                                 <p class="card-text">Este producto es importado</p>
                                 <a href="#" class="btn btn-light"><i class="fas fa-shopping-cart"></i></a>
-                                <a href="#" class="btn btn-light"><i class="far fa-heart"></i></a>
+                                <a href="#" class="btn btn-light"><i class="fas fa-trash-alt"></a>
                             </div>
                         </div>
                     </div>
