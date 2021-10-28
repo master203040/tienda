@@ -135,7 +135,23 @@
                 </div>
             </div>
         </main>
-       
+        <div class="b-example-divider"></div>
+
+        <div class="container-flur">
+            <footer class="d-flex justify-content-center align-items-center  p-3 mt-5 bg-dark">
+                <div class="col-md-4 text-center">
+                   <span class="text-white">&copy; 2021 Company, Inc </span>
+                </div>
+                <ul class="nav col-md-4 justify-content-lef gb-dark">
+                    <li class="ms-3"><a class="text-white" href="#"><i class="fab fa-github"></i></a></li>
+                    <li class="ms-3"><a class="text-white" href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li class="ms-3"><a class=" nav-link text-white" href="#">www.theStore.com</a></li>
+                </ul>
+                <p class = "text-white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi animi ducimus quisquam error officia nulla esse, architecto minus nisi aliquam quis aut, maxime iste! Ipsa!
+                </p>
+            </footer>
+        </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js"
          integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA=="
          crossorigin="anonymous" referrerpolicy="no-referrer">
