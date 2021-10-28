@@ -1,13 +1,10 @@
 <?php 
 
  if(!isset($_SESSION)){
-        session_start();
-    }
+    session_start();
+ }
 
 ?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -112,6 +109,7 @@
       <?php unset($_SESSION['mensaje'])?>
       <?php endif ?>
     </section>
+    <script src="../public/js/modal.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js"
          integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA=="
          crossorigin="anonymous" referrerpolicy="no-referrer">
