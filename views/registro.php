@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="../public/estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
-<body>
+<body  class = "bg-dark text-white">
     <div class="b-example-divider"></div>
             <header class="p-3 mb-3 border-bottom bg-dark ">
                 <div class="container">
@@ -48,42 +48,43 @@
                 </div>
             </header>
     <main>
-        <div class="container mt-5">
+        
+        <div class="container mt-5 ">
             <div class="row d-flex justify-content-center">
                 <div class="col-12 col-md-5">
                     <form action="../controllers/cotroladorproductos.php" method="POST">
-                        <h3>Registro de Productos</h3>
+                        <h3>Register the Product</h3>
                         <div class="mb-3 mt-5">
-                            <label class="form-label">Nombres del producto</label>
+                            <label class="form-label">Product name</label>
                             <input type="text" class="form-control" name="nombre" autofocus>
                         </div>
 
                         <div class="mb-3">
-                            <label class="form-label">valor del producto</label>
+                            <label class="form-label">Product value</label>
                             <input type="text" class="form-control" name="valor">
                         </div>
 
                         <div class="mb-3">
-                            <label class="form-label">tipo de producto</label>
+                            <label class="form-label">Product type</label>
                             <input type="text" class="form-control" name="tipo">
                         </div>
 
                         <div class="mb-3">
-                            <label class="form-label">foto de producto</label>
+                            <label class="form-label">Product URL</label>
                             <input type="text" class="form-control" name="foto">
                         </div>
 
                         <div class="mb-3">
-                            <label class="form-label">Descripcion</label>
+                            <label class="form-label">Description</label>
                             <textarea class="form-control" name="descripcion"></textarea>
                         </div>
 
                         <div class="mb-3">
-                            <label class="form-label">inventario</label>
+                            <label class="form-label">inventory</label>
                             <input type="text" class="form-control" name="inventario">
                         </div>
 
-                        <button type="submit" class="btn btn-primary" name="boton">registrar</button>
+                        <button type="submit" class="btn btn-primary" name="boton">Check in</button>
             
                     </form>
 
