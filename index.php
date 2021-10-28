@@ -82,55 +82,60 @@
                 <div class="row d-fex justify-content-center">
                     <div class="col">
                         <div class="card" style="width: 18rem;">
-                            <img src="../public/img/almuadas.jpg" class="card-img-top" alt="...">
+                            <img src="../public/img/almuadas.jpg" class="card-img-top" alt="img1">
                             <div class="card-body">
                                 <h5 class="card-title">Almuadas</h5>
                                  <p>$150.000</p>
                                 <p class="card-text">Este producto es importado</p>
                                 <a href="#" class="btn btn-light"><i class="fas fa-shopping-cart"></i></a>
                                 <a href="#" class="btn btn-light"><i class="fas fa-trash-alt"></i></a>
+                                <a href="#" class="btn btn-light"><i class="fas fa-pen"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card" style="width: 18rem;">
-                            <img src="../public/img/covijas.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Covijas</h5>
-                                <p>$148.000</p>
-                                <p class="card-text">Este producto es importado</p>
-                                <a href="#" class="btn btn-light"><i class="fas fa-shopping-cart"></i></a>
-                                <a href="#" class="btn btn-light"><i class="fas fa-trash-alt"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="../public/img/covijas.jpg" class="card-img-top" alt="...">
+                            <img src="../public/img/covijas.jpg" class="card-img-top" alt="img2">
                             <div class="card-body">
                                 <h5 class="card-title">Covijas</h5>
                                 <p>$148.000</p>
                                 <p class="card-text">Este producto es importado</p>
                                 <a href="#" class="btn btn-light"><i class="fas fa-shopping-cart"></i></a>
                                 <a href="#" class="btn btn-light"><i class="fas fa-trash-alt"></i></a>
+                                <a href="#" class="btn btn-light"><i class="fas fa-pen"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card" style="width: 18rem;">
-                            <img src="../public/img/covijas.jpg" class="card-img-top" alt="...">
+                            <img src="../public/img/covijas.jpg" class="card-img-top" alt="img3">
                             <div class="card-body">
                                 <h5 class="card-title">Covijas</h5>
                                 <p>$148.000</p>
                                 <p class="card-text">Este producto es importado</p>
                                 <a href="#" class="btn btn-light"><i class="fas fa-shopping-cart"></i></a>
-                                <a href="#" class="btn btn-light"><i class="fas fa-trash-alt"></a>
+                                <a href="#" class="btn btn-light"><i class="fas fa-trash-alt"></i></a>
+                                <a href="#" class="btn btn-light"><i class="fas fa-pen"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../public/img/covijas.jpg" class="card-img-top" alt="img4">
+                            <div class="card-body">
+                                <h5 class="card-title">Covijas</h5>
+                                <p>$148.000</p>
+                                <p class="card-text">Este producto es importado</p>
+                                <a href="#" class="btn btn-light"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#" class="btn btn-light"><i class="fas fa-trash-alt"></i></a>
+                                <a href="#" class="btn btn-light"><i class="fas fa-pen"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
+       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js"
          integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA=="
          crossorigin="anonymous" referrerpolicy="no-referrer">
