@@ -75,9 +75,7 @@
                             <label class="form-label">inventory</label>
                             <input type="text" class="form-control" name="inventario">
                         </div>
-
                         <button type="submit" class="btn btn-primary" name="boton">Check in</button>
-            
                     </form>
                 </div> 
             </div>
@@ -86,10 +84,24 @@
     
     <section>
         <?php if(isset($_SESSION['mensaje'])):?>
-                
+            <div class="modal fade" id="modal" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <?php unset($_SESSION['mensaje'])?>
         <?php endif ?>
     </section>
+
     <script src="../public/js/modal.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js"
          integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA=="

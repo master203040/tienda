@@ -134,9 +134,9 @@
                     </div>
                 </div>
             </div>
+            
         </main>
         <div class="b-example-divider"></div>
-
         <div class="container-flur">
             <footer class="d-flex justify-content-center align-items-center  p-3 mt-5 bg-dark">
                 <div class="col-md-4 text-center">
