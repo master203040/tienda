@@ -81,28 +81,26 @@
             </div>
         </div>
     </main>
-    
     <section>
         <?php if(isset($_SESSION['mensaje'])):?>
             <div class="modal fade" id="modal" tabindex="-1">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                ...
-                            </div>
-                        </div>
-                    </div>
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">The Store<i class="fas fa-shopping-cart"></i></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-dark">
+                    <h5><?php echo($_SESSION['mensaje'])?></h5>
+                </div>
                 </div>
             </div>
-            <?php unset($_SESSION['mensaje'])?>
+            </div>
+        <?php unset($_SESSION['mensaje'])?>
         <?php endif ?>
     </section>
 
-    <script src="../public/js/modal.js"></script>
+    <script type ="module" src="../public/js/modal1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js"
          integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA=="
          crossorigin="anonymous" referrerpolicy="no-referrer">

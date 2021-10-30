@@ -34,7 +34,7 @@
        //5. valido el resultado
        if($resultado){
 
-           $_SESSION['mensaje']="exito en el registro";
+           $_SESSION['mensaje']="successful registration";
 
            header("Location:../views/registro.php");
            
