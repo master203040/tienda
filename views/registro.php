@@ -22,12 +22,12 @@
                     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                         <h1 class="text-white">THE STORE<i class="fas fa-shopping-cart"></i></h1>
                         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                            <li><a href="../index.php" class="nav-link px-2 link-dark text-white">Home</a></li>
+                            <li><a href="../views/index.php" class="nav-link px-2 link-dark text-white">Home</a></li>
                             <li><a href="#" class="nav-link px-2 link-dark text-white">About us</a></li>
                             <li><a href="#" class="nav-link px-2 link-dark text-white">Offers of the day</a></li>
                             <li><a href="#" class="nav-link px-2 link-dark text-white">Customer service</a></li>
                             <li><a href="#" class="nav-link px-2 link-dark text-white">Contact</a></li>
-                            <li><a href="./views/registro.php" class="nav-link px-2 link-dark text-white">Enter product </a></li>
+                            <li><a href="#" class="nav-link px-2 link-dark text-white">Enter product </a></li>
                         </ul>
 
                         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">

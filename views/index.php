@@ -1,11 +1,17 @@
+
+<?php
+
+    include("../controllers/controladorarticulos.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="./public/estilos.css">
+        <title>HOME</title>
+        <link rel="stylesheet" href="../public/estilos.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.css"
         integrity="sha512-Q0DfJ+I5cbH4Wm20NlPZ/fENHil7k3ZgzI9b71LfQAB1IlM8Gt7aO7eOPX2QzYT+4fZaF6u1kSfZAHczl4r/9Q=="
@@ -19,12 +25,12 @@
                     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                         <h1 class="text-white">THE STORE<i class="fas fa-shopping-cart"></i></h1>
                         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                            <li><a href="index.php" class="nav-link px-2 link-dark text-white">Home</a></li>
+                            <li><a href="../views/index.php" class="nav-link px-2 link-dark text-white">Home</a></li>
                             <li><a href="#" class="nav-link px-2 link-dark text-white">About us</a></li>
                             <li><a href="#" class="nav-link px-2 link-dark text-white">Offers of the day</a></li>
                             <li><a href="#" class="nav-link px-2 link-dark text-white">Customer service</a></li>
                             <li><a href="#" class="nav-link px-2 link-dark text-white">Contact</a></li>
-                            <li><a href="./views/registro.php" class="nav-link px-2 link-dark text-white">Enter product </a></li>
+                            <li><a href="../views/registro.php" class="nav-link px-2 link-dark text-white">Enter product </a></li>
                         </ul>
 
                         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
@@ -47,25 +53,25 @@
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./public/img/img8.jpg" class="d-block w-100" alt="Photography1">
+                            <img src="../public/img/img8.jpg" class="d-block w-100" alt="Photography1">
                         </div>
                         <div class="carousel-item">
-                            <img src="./public/img/Img1.jpg" class="d-block w-100" alt="Photography2">
+                            <img src="../public/img/Img1.jpg" class="d-block w-100" alt="Photography2">
                         </div>
                         <div class="carousel-item">
-                            <img src="./public/img/img3.jpg" class="d-block w-100" alt="Photography3">
+                            <img src="../public/img/img3.jpg" class="d-block w-100" alt="Photography3">
                         </div>
                         <div class="carousel-item">
-                            <img src="./public/img/img4.jpg" class="d-block w-100" alt="Photography4">
+                            <img src="../public/img/img4.jpg" class="d-block w-100" alt="Photography4">
                         </div>
                         <div class="carousel-item">
-                            <img src="./public/img/img5.jpg" class="d-block w-100" alt="Photography5">
+                            <img src="../public/img/img5.jpg" class="d-block w-100" alt="Photography5">
                         </div>
                         <div class="carousel-item">
-                            <img src="./public/img/img6.jpg" class="d-block w-100" alt="Photography6">
+                            <img src="../public/img/img6.jpg" class="d-block w-100" alt="Photography6">
                         </div>
                         <div class="carousel-item">
-                            <img src="./public/img/img7.jpg" class="d-block w-100" alt="Photography7">
+                            <img src="../public/img/img7.jpg" class="d-block w-100" alt="Photography7">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -80,64 +86,26 @@
             </div>
             <div class="container mt-5">
                 <div class="row d-fex justify-content-center">
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="../public/img/almuadas.jpg" class="card-img-top" alt="img1">
-                            <div class="card-body">
-                                <h5 class="card-title">Almuadas</h5>
-                                 <p>$150.000</p>
-                                <p class="card-text">Este producto es importado</p>
-                                <a href="#" class="btn btn-light"><i class="fas fa-shopping-cart"></i></a>
-                                <a href="#" class="btn btn-light"><i class="fas fa-trash-alt"></i></a>
-                                <a href="#" class="btn btn-light"><i class="fas fa-pen"></i></a>
+                    <?php foreach($producto as $producto):?>
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img src="<?php echo($producto["foto"])?>" class="card-img-top" alt="img1">
+                                <div class="card-body">
+                                    <h5 class="card-title"><?php echo($producto["nombre"])?></h5>
+                                    <p class ="card-text"><?php echo($producto["valor"])?></p>
+                                    <p class="card-text"><?php echo($producto["descripcion"])?></p>
+                                    <a href="#" class="btn btn-light"><i class="fas fa-shopping-cart"></i></a>
+                                    <a href="#" class="btn btn-light"><i class="fas fa-trash-alt"></i></a>
+                                    <a href="#" class="btn btn-light"><i class="fas fa-pen"></i></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="../public/img/covijas.jpg" class="card-img-top" alt="img2">
-                            <div class="card-body">
-                                <h5 class="card-title">Covijas</h5>
-                                <p>$148.000</p>
-                                <p class="card-text">Este producto es importado</p>
-                                <a href="#" class="btn btn-light"><i class="fas fa-shopping-cart"></i></a>
-                                <a href="#" class="btn btn-light"><i class="fas fa-trash-alt"></i></a>
-                                <a href="#" class="btn btn-light"><i class="fas fa-pen"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="../public/img/covijas.jpg" class="card-img-top" alt="img3">
-                            <div class="card-body">
-                                <h5 class="card-title">Covijas</h5>
-                                <p>$148.000</p>
-                                <p class="card-text">Este producto es importado</p>
-                                <a href="#" class="btn btn-light"><i class="fas fa-shopping-cart"></i></a>
-                                <a href="#" class="btn btn-light"><i class="fas fa-trash-alt"></i></a>
-                                <a href="#" class="btn btn-light"><i class="fas fa-pen"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="../public/img/covijas.jpg" class="card-img-top" alt="img4">
-                            <div class="card-body">
-                                <h5 class="card-title">Covijas</h5>
-                                <p>$148.000</p>
-                                <p class="card-text">Este producto es importado</p>
-                                <a href="#" class="btn btn-light"><i class="fas fa-shopping-cart"></i></a>
-                                <a href="#" class="btn btn-light"><i class="fas fa-trash-alt"></i></a>
-                                <a href="#" class="btn btn-light"><i class="fas fa-pen"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endforeach ?>
                 </div>
-            </div>
-            
+            </div>      
         </main>
         <div class="b-example-divider"></div>
-        <div class="container-flur">
+        <div class="container-flur fixed-bottom">
             <footer class="d-flex justify-content-center align-items-center  p-3 mt-5 bg-dark">
                 <div class="col-md-4 text-center">
                    <span class="text-white">&copy; 2021 Company, Inc </span>
