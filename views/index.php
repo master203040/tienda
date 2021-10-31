@@ -10,7 +10,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>HOME</title>
+        <title>Home and fashion</title>
         <link rel="stylesheet" href="../public/estilos.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.css"
@@ -20,7 +20,7 @@
     <body>
         <main>
             <div class="b-example-divider"></div>
-            <header class="p-3 mb-3 border-bottom bg-dark ">
+            <header class="p-3 mb-3 border-bottom bg-dark  fixed-top">
                 <div class="container">
                     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                         <h1 class="text-white">THE STORE<i class="fas fa-shopping-cart"></i></h1>
@@ -47,9 +47,9 @@
                         </div>
                 </div>
             </header>
-            <div class="container">
-            </div>
-            <div class="banner">
+            <br>
+            <br>
+            <div class="container- flur mt-5 ">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -84,11 +84,11 @@
                     </button>
                 </div>
             </div>
-            <div class="container mt-5">
-                <div class="row d-fex justify-content-center">
+            <div class="container mt-5 d-flex justify-content-center">
+                <div class="row g-4">
                     <?php foreach($producto as $producto):?>
                         <div class="col">
-                            <div class="card" style="width: 18rem;">
+                            <div class="card h-100 "style="width: 18rem;">
                                 <img src="<?php echo($producto["foto"])?>" class="card-img-top" alt="img1">
                                 <div class="card-body">
                                     <h5 class="card-title"><?php echo($producto["nombre"])?></h5>
@@ -106,7 +106,7 @@
         </main>
         <div class="b-example-divider"></div>
         <div class="container-flur fixed-bottom">
-            <footer class="d-flex justify-content-center align-items-center  p-3 mt-5 bg-dark">
+            <footer class="d-flex justify-content-center align-items-center  p-1 mt-5 bg-dark">
                 <div class="col-md-4 text-center">
                    <span class="text-white">&copy; 2021 Company, Inc </span>
                 </div>

@@ -68,12 +68,12 @@
 
                         <div class="mb-3">
                             <label class="form-label">Description</label>
-                            <textarea class="form-control" name="descripcion"></textarea>
+                            <textarea  type ="text"class="form-control" name="descripcion"></textarea>
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label">inventory</label>
-                            <input type="text" class="form-control" name="inventario">
+                            <input type="number" class="form-control" name="inventario">
                         </div>
                         <button type="submit" class="btn btn-primary" name="boton">Check in</button>
                     </form>
