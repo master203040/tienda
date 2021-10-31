@@ -17,7 +17,7 @@
 </head>
 <body  class = "bg-dark text-white">
     <div class="b-example-divider"></div>
-            <header class="p-3 mb-3 border-bottom bg-dark ">
+            <header class="p-3 mb-3 border-bottom bg-dark  fixed-top">
                 <div class="container">
                     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                         <h1 class="text-white">THE STORE<i class="fas fa-shopping-cart"></i></h1>
@@ -41,8 +41,8 @@
                 </div>
             </header>
     <main>
-        <div class="container mt-5 ">
-            <div class="row d-flex justify-content-center">
+        <div class="container mt-5 py-5">
+            <div class="row d-flex justify-content-center py-5">
                 <div class="col-12 col-md-5">
                     <form action="../controllers/cotroladorproductos.php" method="POST">
                         <h3>Register the Product</h3>
@@ -58,7 +58,12 @@
 
                         <div class="mb-3">
                             <label class="form-label">Product type</label>
-                            <input type="text" class="form-control" name="tipo">
+                            <select class="form-select" aria-label="Default select example"name ="tipo">
+                                <option selected></option>
+                                <option value="tecnologia">tecnologia</option>
+                                <option value="hogar y moda ">hogar y moda</option>
+                                <option value="3">Three</option>
+                            </select>
                         </div>
 
                         <div class="mb-3">
@@ -68,12 +73,12 @@
 
                         <div class="mb-3">
                             <label class="form-label">Description</label>
-                            <textarea  type ="text"class="form-control" name="descripcion"></textarea>
+                            <textarea type ="text"class="form-control" name="inventario"></textarea>
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label">inventory</label>
-                            <input type="number" class="form-control" name="inventario">
+                            <input type="text"class="form-control" name="descripcion">
                         </div>
                         <button type="submit" class="btn btn-primary" name="boton">Check in</button>
                     </form>
@@ -99,6 +104,21 @@
         <?php unset($_SESSION['mensaje'])?>
         <?php endif ?>
     </section>
+    <div class="container-flur mt-5">
+            <footer class="d-flex justify-content-center align-items-center bg-dark">
+                <div class="col-md-4 text-center">
+                   <span class="text-white">&copy; 2021 Company, Inc </span>
+                </div>
+                <ul class="nav col-md-4 justify-content-lef gb-dark">
+                    <li class="ms-3"><a class="text-white" href="#"><i class="fab fa-github"></i></a></li>
+                    <li class="ms-3"><a class="text-white" href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li class="ms-3"><a class=" nav-link text-white" href="#">www.theStore.com</a></li>
+                </ul>
+                <p class = "text-white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi animi ducimus quisquam error officia nulla esse, architecto minus nisi aliquam quis aut, maxime iste! Ipsa!
+                </p>
+            </footer>
+        </div>
 
     <script type ="module" src="../public/js/modal1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js"

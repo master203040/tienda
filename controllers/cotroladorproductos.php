@@ -24,7 +24,7 @@
 
 
         //3. Creo un objeto(variable) del modelo EMPLEADO
-        $producto=new Producto($nombre,$valor, $tipo,$foto,$descripcion,$inventario);
+        $producto=new Producto($nombre,$valor,$tipo,$foto,$descripcion,$inventario);
 
     
        //4. Ejecutar el metodo insertar registro de la bd

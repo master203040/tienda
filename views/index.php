@@ -47,9 +47,7 @@
                         </div>
                 </div>
             </header>
-            <br>
-            <br>
-            <div class="container- flur mt-5 ">
+            <div class="container- flur mt-5 py-5 ">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -84,16 +82,18 @@
                     </button>
                 </div>
             </div>
-            <div class="container mt-5 d-flex justify-content-center">
+            <h2 class="text-center fw-bold">Home and Fashion</h2>
+            <div class="container mt-5 d-flex justify-content-center p-5 ">
                 <div class="row g-4">
                     <?php foreach($producto as $producto):?>
                         <div class="col">
                             <div class="card h-100 "style="width: 18rem;">
                                 <img src="<?php echo($producto["foto"])?>" class="card-img-top" alt="img1">
                                 <div class="card-body">
-                                    <h5 class="card-title"><?php echo($producto["nombre"])?></h5>
-                                    <p class ="card-text"><?php echo($producto["valor"])?></p>
-                                    <p class="card-text"><?php echo($producto["descripcion"])?></p>
+                                    <h5 class="card-title fw-bold"><?php echo($producto["nombre"])?></h5>
+                                    <p class ="card-text">us$ <?php echo($producto["valor"])?></p>
+                                    <p class="card-text">descripcion: <?php echo($producto["descripcion"])?></p>
+                                     <p class="card-text">cantidad: <?php echo($producto["inventario"])?></p>
                                     <a href="#" class="btn btn-light"><i class="fas fa-shopping-cart"></i></a>
                                     <a href="#" class="btn btn-light"><i class="fas fa-trash-alt"></i></a>
                                     <a href="#" class="btn btn-light"><i class="fas fa-pen"></i></a>
@@ -105,18 +105,18 @@
             </div>      
         </main>
         <div class="b-example-divider"></div>
-        <div class="container-flur fixed-bottom">
-            <footer class="d-flex justify-content-center align-items-center  p-1 mt-5 bg-dark">
+        <div class="container-flur py-5 " >
+            <footer class="d-flex justify-content-center align-items-center bg-white">
                 <div class="col-md-4 text-center">
-                   <span class="text-white">&copy; 2021 Company, Inc </span>
+                   <span class="text-dark fw-bold">&copy; 2021 Company, Inc </span>
                 </div>
                 <ul class="nav col-md-4 justify-content-lef gb-dark">
-                    <li class="ms-3"><a class="text-white" href="#"><i class="fab fa-github"></i></a></li>
-                    <li class="ms-3"><a class="text-white" href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li class="ms-3"><a class=" nav-link text-white" href="#">www.theStore.com</a></li>
+                    <li class="ms-3"><a class="text-dark fw-bold" href="#"><i class="fab fa-github"></i></a></li>
+                    <li class="ms-3"><a class="text-dark fw-bold" href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li class="ms-3"><a class=" nav-link text-dark fw-bold" href="#">www.theStore.com</a></li>
                 </ul>
-                <p class = "text-white">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi animi ducimus quisquam error officia nulla esse, architecto minus nisi aliquam quis aut, maxime iste! Ipsa!
+                <p class = "text-dark fw-bold">
+                    La Planta Central de los Envio esta en la Ciudad de Medellin-Colombia calle 24 #23-584 Autopista Norte via a Barbosa
                 </p>
             </footer>
         </div>

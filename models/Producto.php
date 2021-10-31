@@ -27,7 +27,7 @@
         //acciones = funciones = metodos
         public function registro(){
 
-            $consultaSQL="INSERT INTO productos(nombre,valor,tipo,foto,inventario,descripcion) VALUES ('$this->nombre','$this->valor','$this->tipo','$this->foto','$this->inventario','$this->descripcion')";
+            $consultaSQL="INSERT INTO productos(nombre,valor,tipo,foto,descripcion,inventario) VALUES ('$this->nombre','$this->valor','$this->tipo','$this->foto','$this->descripcion','$this->inventario')";
            
 
             return $consultaSQL;
