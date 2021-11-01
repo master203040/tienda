@@ -19,17 +19,17 @@
     $baseDatos=new BaseDatos();
     $resultado=$baseDatos->insertarRegistro($producto->eliminar($id));
 
-     //5. valido el resultado
-       if($resultado){
+    //5. valido el resultado
+    if($resultado){
 
-           $_SESSION['mensaje']="exito elimianndo el jugador";
+        $_SESSION['mensaje']="exito elimianndo el jugador";
 
-           header("Location:../views/index.php");
+        header("Location:../views/registro.php");
            
 
-       }else{
-           echo("upss... Tenemos problemas para registrar datos");
-       }
+    }else{
+        echo("upss... Tenemos problemas para registrar datos");
+    }
 
 
 ?>

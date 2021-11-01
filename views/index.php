@@ -2,6 +2,7 @@
 <?php
 
     include("../controllers/controladorarticulos.php");
+    
 ?>
 
 <!DOCTYPE html>
@@ -96,7 +97,7 @@
                                     <p class="card-text">descripcion: <?php echo($producto["descripcion"])?></p>
                                      <p class="card-text">cantidad: <?php echo($producto["inventario"])?></p>
                                     <a href="#" class="btn btn-light"><i class="fas fa-shopping-cart"></i></a>
-                                    <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#delete<?=$producto["id"]?>"><i class="fas fa-trash-alt"></i></a>
+                                    <a href="#" class="btn btn-light"data-bs-toggle="modal" data-bs-target="#delete<?=$producto["id"]?>"><i class="fas fa-trash-alt"></i></a>
                                     <a href="#" class="btn btn-light"><i class="fas fa-pen"></i></a>
                                 </div>
                             </div>
