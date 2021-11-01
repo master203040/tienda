@@ -83,6 +83,7 @@
                 </div>
             </div>
             <h2 class="text-center fw-bold">Home and Fashion</h2>
+            <!--codigo para activaciones de eliminacion y mostrar datos--->
             <div class="container mt-5 d-flex justify-content-center p-5 ">
                 <div class="row g-4">
                     <?php foreach($producto as $producto):?>
@@ -95,15 +96,38 @@
                                     <p class="card-text">descripcion: <?php echo($producto["descripcion"])?></p>
                                      <p class="card-text">cantidad: <?php echo($producto["inventario"])?></p>
                                     <a href="#" class="btn btn-light"><i class="fas fa-shopping-cart"></i></a>
-                                    <a href="#" class="btn btn-light"><i class="fas fa-trash-alt"></i></a>
+                                    <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#delete<?=$producto["id"]?>"><i class="fas fa-trash-alt"></i></a>
                                     <a href="#" class="btn btn-light"><i class="fas fa-pen"></i></a>
                                 </div>
                             </div>
+                            <!-- Modal eliminar -->
+                            <section>
+                                <div class="modal fade" id="delete<?=$producto["id"]?>" tabindex="-1">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header bg-primary text-white">
+                                                <h5 class="modal-title">The Store<i class="fas fa-shopping-cart"></i></h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>¿are you sure to remove the product?</p>
+                                                <p><?= $producto["id"] ?></p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                                                <a href="../controllers/controladoreliminararticulo.php?id=<?= $producto["id"]?>" class="btn btn-danger">to accept</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
                         </div>
                     <?php endforeach ?>
                 </div>
             </div>      
         </main>
+        
         <div class="b-example-divider"></div>
         <div class="container-flur py-5 " >
             <footer class="d-flex justify-content-center align-items-center bg-white">
