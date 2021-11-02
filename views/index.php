@@ -3,6 +3,7 @@
 
     include("../controllers/controladorarticulos.php");
     
+    
 ?>
 
 <!DOCTYPE html>
@@ -84,6 +85,7 @@
                 </div>
             </div>
             <h2 class="text-center fw-bold">Home and Fashion</h2>
+
             <!--codigo para activaciones de eliminacion y mostrar datos--->
             <div class="container mt-5 d-flex justify-content-center p-5 ">
                 <div class="row g-4">
@@ -93,12 +95,12 @@
                                 <img src="<?php echo($producto["foto"])?>" class="card-img-top" alt="img1">
                                 <div class="card-body">
                                     <h5 class="card-title fw-bold"><?php echo($producto["nombre"])?></h5>
-                                    <p class ="card-text">us$ <?php echo($producto["valor"])?></p>
-                                    <p class="card-text">descripcion: <?php echo($producto["descripcion"])?></p>
-                                     <p class="card-text">cantidad: <?php echo($producto["inventario"])?></p>
+                                    <p class ="card-text">Us$ <?php echo($producto["valor"])?></p>
+                                    <p class="card-text lh-1">Descripcion <?php echo($producto["descripcion"])?></p>
+                                    <p class="card-text">Cantidad <?php echo($producto["inventario"])?></p>
                                     <a href="#" class="btn btn-light"><i class="fas fa-shopping-cart"></i></a>
                                     <a href="#" class="btn btn-light"data-bs-toggle="modal" data-bs-target="#delete<?=$producto["id"]?>"><i class="fas fa-trash-alt"></i></a>
-                                    <a href="#" class="btn btn-light"><i class="fas fa-pen"></i></a>
+                                    <a href="#" class="btn btn-light"data-bs-toggle="modal" data-bs-target="#editar<?=$producto["id"]?>"><i class="fas fa-pen"></i></a>
                                 </div>
                             </div>
                             <!-- Modal eliminar -->
@@ -106,7 +108,7 @@
                                 <div class="modal fade" id="delete<?=$producto["id"]?>" tabindex="-1">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
-                                            <div class="modal-header bg-primary text-white">
+                                            <div class="modal-header bg-secondary text-white">
                                                 <h5 class="modal-title">The Store<i class="fas fa-shopping-cart"></i></h5>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                                             </div>
@@ -116,13 +118,46 @@
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
-                                                <a href="../controllers/controladoreliminararticulo.php?id=<?= $producto["id"]?>" class="btn btn-danger">to accept</a>
+                                                <a href="../controllers/controladorDelete.php?id=<?= $producto["id"]?>" class="btn btn-danger">to accept</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </section>
-
+                            
+                            <!-- Modal editar -->
+                            <section>
+                                <div class="modal fade" id="editar<?= $producto["id"] ?>" tabindex="-1">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header bg-secondary text-white">
+                                                <h5 class="modal-title">The Store<i class="fas fa-shopping-cart"></i></h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <img src="<?= $producto["foto"] ?>" alt="foto" class="img-fluid w-100">
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <form action="" method="">
+                                                            <div class="mb-3">
+                                                                <label  class="form-label">Product value</label>
+                                                                <input type="text" class="form-control" value="<?= $producto["valor"] ?>">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label  class="form-label">Description</label>
+                                                                <input type="text" class="form-control" value="<?= $producto["descripcion"] ?>">
+                                                            </div>
+                                                            <button type="submit" class="btn btn-primary">Edit</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                     <?php endforeach ?>
                 </div>
@@ -140,7 +175,7 @@
                     <li class="ms-3"><a class="text-dark fw-bold" href="#"><i class="fab fa-instagram"></i></a></li>
                     <li class="ms-3"><a class=" nav-link text-dark fw-bold" href="#">www.theStore.com</a></li>
                 </ul>
-                <p class = "text-dark fw-bold">
+                <p class = "text-dark fw-bold lh-1">
                     La Planta Central de los Envio esta en la Ciudad de Medellin-Colombia calle 24 #23-584 Autopista Norte via a Barbosa
                 </p>
             </footer>
