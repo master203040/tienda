@@ -13,6 +13,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home and fashion</title>
+        <link rel=" shortcut icon" href="../public/img/carrito.png">
         <link rel="stylesheet" href="../public/estilos.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.css"
@@ -27,12 +28,13 @@
                     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                         <h1 class="text-white">THE STORE<i class="fas fa-shopping-cart"></i></h1>
                         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                            <li><a href="home.php" class="nav-link px-2 link-dark text-white">Home</a></li>
+                            <li><a href="../home.php" class="nav-link px-2 link-dark text-white">Home</a></li>
                             <li><a href="#" class="nav-link px-2 link-dark text-white">About us</a></li>
                             <li><a href="#" class="nav-link px-2 link-dark text-white">Offers of the day</a></li>
                             <li><a href="#" class="nav-link px-2 link-dark text-white">Customer service</a></li>
                             <li><a href="#" class="nav-link px-2 link-dark text-white">Contact</a></li>
                             <li><a href="../views/registro.php" class="nav-link px-2 link-dark text-white">Enter product </a></li>
+                            <li><a href="../views/user.php" class="nav-link px-2 link-dark text-white">User register</a></li>
                         </ul>
 
                         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
@@ -47,6 +49,7 @@
                         <div class="linea1 text-center text-white">
                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab odio aspernatur eaque ullam doloremque consequatur dolorem dignissimos voluptatem perferendis asperiores!</p>
                         </div>
+                    </div>
                 </div>
             </header>
             <div class="container- flur mt-5 py-5 ">

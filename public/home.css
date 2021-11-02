@@ -4,9 +4,6 @@
     background-color: rgba(238, 207, 207, 0.308);
     border-radius: 3px;
 }
-
-
-
 #cards {
 
     border-width: 1px;
@@ -16,13 +13,11 @@
     cursor: default;
     transition: all 400ms ease;
 }
-
 #cards:hover {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
     transform: translateY(-3%);
 
 }
-
 #img {
     width: 330px;
     height: 300px;

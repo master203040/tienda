@@ -12,10 +12,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register product</title>
-    <link rel="stylesheet" href="../public/estilos.css">
+    <link rel=" shortcut icon" href="../public/img/carrito.png">
+    <link rel="stylesheet" href="../public/registro.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
-<body  class = "bg-dark text-white">
+<body>
     <div class="b-example-divider"></div>
             <header class="p-3 mb-3 border-bottom bg-dark  fixed-top">
                 <div class="container">
@@ -27,12 +28,16 @@
                             <li><a href="#" class="nav-link px-2 link-dark text-white">Offers of the day</a></li>
                             <li><a href="#" class="nav-link px-2 link-dark text-white">Customer service</a></li>
                             <li><a href="#" class="nav-link px-2 link-dark text-white">Contact</a></li>
-                            <li><a href="#" class="nav-link px-2 link-dark text-white">Enter product </a></li>
+                            <li><a href="../views/registro.php" class="nav-link px-2 link-dark text-white">Enter product </a></li>
+                            <li><a href="#" class="nav-link px-2 link-dark text-white">User register</a></li>
                         </ul>
 
                         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
                             <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
                         </form>
+                        <button type="button" class="btn btn-primary me-md-2" data-bs-toggle="modal"data-bs-target="#staticBackdrop1">
+                        Search
+                        </button>
                         </div>
                         </div>
                         <div class="linea1 text-center text-white">
@@ -44,7 +49,7 @@
         <div class="container mt-5 py-5">
             <div class="row d-flex justify-content-center py-5">
                 <div class="col-12 col-md-5">
-                    <form action="../controllers/cotroladorproductos.php" method="POST">
+                    <form action="../controllers/cotroladorproductos.php" method="POST" class="form">
                         <h3>Register the Product</h3>
                         <div class="mb-3 mt-5">
                             <label class="form-label">Product name</label>
