@@ -27,7 +27,7 @@
                     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                         <h1 class="text-white">THE STORE<i class="fas fa-shopping-cart"></i></h1>
                         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                            <li><a href="../views/index.php" class="nav-link px-2 link-dark text-white">Home</a></li>
+                            <li><a href="home.php" class="nav-link px-2 link-dark text-white">Home</a></li>
                             <li><a href="#" class="nav-link px-2 link-dark text-white">About us</a></li>
                             <li><a href="#" class="nav-link px-2 link-dark text-white">Offers of the day</a></li>
                             <li><a href="#" class="nav-link px-2 link-dark text-white">Customer service</a></li>
@@ -40,7 +40,7 @@
                         </form>
                         
                         <button type="button" class="btn btn-primary me-md-2" data-bs-toggle="modal"data-bs-target="#staticBackdrop1">
-                        Sign up
+                        Search
                         </button>
                         </div>
                         </div>
@@ -175,7 +175,7 @@
                     <li class="ms-3"><a class="text-dark fw-bold" href="#"><i class="fab fa-instagram"></i></a></li>
                     <li class="ms-3"><a class=" nav-link text-dark fw-bold" href="#">www.theStore.com</a></li>
                 </ul>
-                <p class = "text-dark fw-bold lh-1">
+                <p class = "text-dark fw-bold lh-sm">
                     La Planta Central de los Envio esta en la Ciudad de Medellin-Colombia calle 24 #23-584 Autopista Norte via a Barbosa
                 </p>
             </footer>
