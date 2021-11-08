@@ -86,6 +86,7 @@ if(!isset($_SESSION)){
                             <textarea type ="text"class="form-control" name="descripcion"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary" name="boton">Check in</button>
+                        <a href="../views/listaempleado.php" class="nav-link text-primary">View Logs</a>
                     </form>
                 </div> 
             </div>
