@@ -99,8 +99,8 @@
                                 <div class="card-body">
                                     <h5 class="card-title fw-bold"><?php echo($producto["nombre"])?></h5>
                                     <p class ="card-text">Us$ <?php echo($producto["valor"])?></p>
-                                    <p class="card-text lh-1">Descripcion <?php echo($producto["descripcion"])?></p>
-                                    <p class="card-text">Cantidad <?php echo($producto["inventario"])?></p>
+                                    <p class="card-text lh-1">Description <?php echo($producto["descripcion"])?></p>
+                                    <p class="card-text">Quantity <?php echo($producto["inventario"])?></p>
                                     <a href="#" class="btn btn-light"><i class="fas fa-shopping-cart"></i></a>
                                     <a href="#" class="btn btn-light"data-bs-toggle="modal" data-bs-target="#delete<?=$producto["id"]?>"><i class="fas fa-trash-alt"></i></a>
                                     <a href="#" class="btn btn-light"data-bs-toggle="modal" data-bs-target="#editar<?=$producto["id"]?>"><i class="fas fa-pen"></i></a>
