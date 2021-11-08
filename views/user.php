@@ -1,3 +1,13 @@
+<?php
+
+
+if(!isset($_SESSION)){
+   session_start();
+}
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,7 +54,7 @@
         <div class="container mt-5 py-5">
             <div class="row d-flex justify-content-center py-5">
                 <div class="col-12 col-md-5">
-                    <form action="#" method="POST" class="form">
+                    <form action="../controllers/controladorusuario.php" method="POST" class="form">
                         <h3>User Register</h3>
                         <div class="mb-3 mt-5">
                             <label class="form-label">Name</label>
@@ -82,24 +92,39 @@
         </div>
     </main>
     <section>
-
+        <?php if(isset($_SESSION['mensaje'])):?>
+            <div class="modal fade" id="modal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header bg-secondary text-white">
+                            <h5 class="modal-title" id="exampleModalLabel">The Store<i class="fas fa-shopping-cart"></i></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-dark">
+                            <h5><?php echo($_SESSION['mensaje'])?></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <?php unset($_SESSION['mensaje'])?>
+        <?php endif ?>
     </section>
     <div class="b-example-divider"></div>
-        <div class="container-flur py-5 " >
-            <footer class="d-flex justify-content-center align-items-center bg-white">
-                <div class="col-md-4 text-center">
-                   <span class="text-dark fw-bold">&copy; 2021 Company, Inc </span>
-                </div>
-                <ul class="nav col-md-4 justify-content-lef gb-dark">
-                    <li class="ms-3"><a class="text-dark fw-bold" href="#"><i class="fab fa-github"></i></a></li>
-                    <li class="ms-3"><a class="text-dark fw-bold" href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li class="ms-3"><a class=" nav-link text-dark fw-bold" href="#">www.theStore.com</a></li>
-                </ul>
-                <p class = "text-dark fw-bold lh-sm">
-                    La Planta Central de los Envio esta en la Ciudad de Medellin-Colombia calle 24 #23-584 Autopista Norte via a Barbosa
-                </p>
-            </footer>
-        </div>
+    <div class="container-flur py-5 " >
+        <footer class="d-flex justify-content-center align-items-center bg-white">
+            <div class="col-md-4 text-center">
+                <span class="text-dark fw-bold">&copy; 2021 Company, Inc </span>
+            </div>
+            <ul class="nav col-md-4 justify-content-lef gb-dark">
+                <li class="ms-3"><a class="text-dark fw-bold" href="#"><i class="fab fa-github"></i></a></li>
+                <li class="ms-3"><a class="text-dark fw-bold" href="#"><i class="fab fa-instagram"></i></a></li>
+                <li class="ms-3"><a class=" nav-link text-dark fw-bold" href="#">www.theStore.com</a></li>
+            </ul>
+            <p class = "text-dark fw-bold lh-sm">
+                La Planta Central de los Envio esta en la Ciudad de Medellin-Colombia calle 24 #23-584 Autopista Norte via a Barbosa
+            </p>
+        </footer>
+    </div>
 
     <script type ="module" src="../public/js/modal1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js"

@@ -18,12 +18,12 @@
         $email=$_POST["email"];
         $edad=$_POST["edad"];
         $descripcion=$_POST["descripcion"];
-        $fotografia=$_POST["fotografia"];
+        $foto=$_POST["foto"];
 
 
 
         //3. Creo un objeto(variable) del modelo EMPLEADO
-        $empleado=new Empleado($nombre,$apellido,$email,$edad,$descripcion,$fotografia);
+        $empleado=new Empleado($nombre,$apellido,$email,$edad,$descripcion,$foto);
 
     
        //4. Ejecutar el metodo insertar registro de la bd
@@ -33,7 +33,7 @@
        //5. valido el resultado
        if($resultado){
 
-           $_SESSION['mensaje']="exito en el registro";
+           $_SESSION['mensaje']="successful registration";
 
            header("Location:../views/user.php");
            

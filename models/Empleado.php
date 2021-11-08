@@ -30,7 +30,7 @@
         public function registrar(){
 
             $consultaSQL="INSERT INTO empleados(nombre,apellido,email,edad,descripcion,foto) 
-            VALUES ('$this->nombre','$this->apellido',' $this->email','$this->edad','$this->descripcion','$this->foto')";
+            VALUES ('$this->nombre','$this->apellido','$this->email','$this->edad','$this->descripcion','$this->foto')";
 
             return $consultaSQL; 
 

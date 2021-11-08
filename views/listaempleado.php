@@ -1,6 +1,6 @@
 <?php 
     
-    include("../controllers/controladorListadoEmpleado.php");
+    include("../controllers/controladorlistaempleados.php");
 
 ?>
 
@@ -23,12 +23,12 @@
         <div class="container">
             <div class="row row-cols-1 row-cols-md-5 g-4">
                 
-                <?php foreach($empleados as $empleado):?>
+                <?php foreach($empleado as $empleado):?>
                     <div class="col">
                         <div class="card">
                             <img src="<?php echo($empleado["foto"]) ?>" class="card-img-top" alt="foto">
                             <div class="card-body">
-                                <h5 class="card-title"><?php echo($empleado["nombres"])?></h5>
+                                <h5 class="card-title"><?php echo($empleado["nombre"])?></h5>
                                 <p class="card-text"><?php echo($empleado["descripcion"])?></p>
                                 <a href="#" class="btn btn-primary">Eliminar</a>
                             </div>
