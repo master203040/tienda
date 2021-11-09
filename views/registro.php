@@ -65,9 +65,10 @@
                             <label class="form-label">Product type</label>
                             <select class="form-select" aria-label="Default select example"name ="tipo">
                                 <option selected></option>
-                                <option value="tecnologia">tecnologia</option>
-                                <option value="hogar y moda ">hogar y moda</option>
-                                <option value="3">Three</option>
+                                <option value="tecnologia">tecnology</option>
+                                <option value="sport">sport</option>
+                                <option value="hogar y moda ">home and fashion</option>
+                                <option value="electrodomestico">home appliance</option>
                             </select>
                         </div>
 

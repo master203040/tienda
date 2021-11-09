@@ -12,7 +12,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home and fashion</title>
+        <title>Online Store</title>
         <link rel=" shortcut icon" href="../public/img/carrito.png">
         <link rel="stylesheet" href="../public/estilos.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -87,7 +87,7 @@
                     </button>
                 </div>
             </div>
-            <h2 class="text-center fw-bold">Home and Fashion</h2>
+            <h2 class="text-center fw-bold">All Items</h2>
 
             <!--codigo para activaciones de eliminacion y mostrar datos--->
             <div class="container mt-5 d-flex justify-content-center p-5 ">
@@ -97,14 +97,14 @@
                             <div class="card h-100 "style="width: 18rem;">
                                 <img src="<?php echo($producto["foto"])?>" class="card-img-top" alt="img1">
                                 <div class="card-body">
-                                    <h5 class="card-title fw-bold"><?php echo($producto["nombre"])?></h5>
+                                    <h6 class="card-title fw-bold"><?php echo($producto["nombre"])?></h6>
                                     <p class ="card-text">Us$ <?php echo($producto["valor"])?></p>
-                                    <p class="card-text lh-1">Description <?php echo($producto["descripcion"])?></p>
-                                    <p class="card-text">Quantity <?php echo($producto["inventario"])?></p>
+                                    <p class="card-text lh-1">Description: <?php echo($producto["descripcion"])?></p>
+                                    <p class="card-text">Quantity: <?php echo($producto["inventario"])?></p>
                                     <a href="#" class="btn btn-light"><i class="fas fa-shopping-cart"></i></a>
                                     <a href="#" class="btn btn-light"data-bs-toggle="modal" data-bs-target="#delete<?=$producto["id"]?>"><i class="fas fa-trash-alt"></i></a>
                                     <a href="#" class="btn btn-light"data-bs-toggle="modal" data-bs-target="#editar<?=$producto["id"]?>"><i class="fas fa-pen"></i></a>
-                                </div>
+                                </div> 
                             </div>
                             <!-- Modal eliminar -->
                             <section>
@@ -162,7 +162,7 @@
                                 </div>
                             </section>
                         </div>
-                    <?php endforeach ?>
+                    <?php endforeach ?>    
                 </div>
             </div>      
         </main>

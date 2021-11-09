@@ -103,7 +103,7 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h3 class="card-title ">Home appliances</h3>
-                            <a href=""><img src="./public/img/electro4.jpg" id="img" class="rounded mx-auto d-block" alt="..."></a>
+                            <a href="./views/homeappliance.php"><img src="./public/img/electro4.jpg" id="img" class="rounded mx-auto d-block" alt="..."></a>
                         </div>
                     </div>
                 </div>
