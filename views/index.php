@@ -143,7 +143,7 @@
                                                         <img src="<?=$producto["foto"]?>" alt="foto" class="img-fluid w-100">
                                                     </div>
                                                     <div class="col-9">
-                                                        <form action="../controllers/controladoreditar.php?id=<?=$producto["id"]?>"method="post">
+                                                        <form action="../controllers/controladoreditar.php?id=<?=$producto["id"]?>"method="POST">
                                                             <div class="mb-3">
                                                                 <label  class="form-label">Product value</label>
                                                                 <input type="number" class="form-control" value="<?=$producto["valor"]?>">
@@ -152,7 +152,7 @@
                                                                 <label  class="form-label">Description</label>
                                                                 <input type="text" class="form-control" value="<?=$producto["descripcion"]?>">
                                                             </div>
-                                                            <button type="submit" class="btn btn-primary" name="buttonedit">Edit</button>
+                                                            <button type="submit"class="btn btn-primary" name="boton">Edit</button>
                                                         </form>
                                                     </div>
                                                 </div>
@@ -183,6 +183,7 @@
                 </p>
             </footer>
         </div>
+        <script type ="module" src="../public/js/modal2.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js"
          integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA=="
          crossorigin="anonymous" referrerpolicy="no-referrer">

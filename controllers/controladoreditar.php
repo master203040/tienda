@@ -9,7 +9,7 @@
     include("../models/BaseDatos.php");
     include("../models/Producto.php");
 
-    if(isset($_POST["buttonedit"])){
+    if(isset($_POST["boton"])){
 
         //Recibo los datos a editar
         $valor=$_POST["valor"];
