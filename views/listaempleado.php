@@ -47,14 +47,14 @@
     <main>
         <div class="container mt-5 d-flex justify-content-center p-5 ">
             <div class="row g-4">
-                <?php foreach($empleado as $empleado):?>
+                <?php foreach($empleados as $empleado):?>
                     <div class="col">
                         <div class="card h-100" style ="width: 18rem;">
-                            <img src="<?php echo($empleado["foto"])?>" class="card-img-top" alt="foto">
+                            <img src="<?php echo($empleado["foto"])?>"class="card-img-top" alt="foto">
                             <div class="card-body">
-                                <h5 class="card-title">Name<?php echo($empleado["nombre"])?></h5>
+                                <h6 class="card-title">Name <?php echo($empleado["nombre"])?></h6>
                                 <p class="card-text">Last name <?php echo($empleado["apellido"])?></p>
-                                <p class="card-text">Age</p>
+                                <p class="card-text">Age<?php echo($empleado["edad"])?></p>
                                 <p class="card-text lh-1">Description<?php echo($empleado["descripcion"])?></p>
                                 <a href="#" class="btn btn-light"data-bs-toggle="modal" data-bs-target="#delete<?=$producto["id"]?>"><i class="fas fa-trash-alt"></i></a>
                                 <a href="#" class="btn btn-light"data-bs-toggle="modal" data-bs-target="#editar<?=$producto["id"]?>"><i class="fas fa-pen"></i></a>
