@@ -117,7 +117,7 @@
                                             </div>
                                             <div class="modal-body">
                                                 <p>¿are you sure to remove the product?</p>
-                                                <p><?= $producto["id"] ?></p>
+                                                <p><?=$producto["id"]?></p>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
@@ -130,7 +130,7 @@
                             
                             <!-- Modal editar -->
                             <section>
-                                <div class="modal fade" id="editar<?= $producto["id"] ?>" tabindex="-1">
+                                <div class="modal fade" id="editar<?=$producto["id"]?>" tabindex="-1">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header bg-secondary text-white">
@@ -140,19 +140,19 @@
                                             <div class="modal-body">
                                                 <div class="row">
                                                     <div class="col-3">
-                                                        <img src="<?= $producto["foto"] ?>" alt="foto" class="img-fluid w-100">
+                                                        <img src="<?=$producto["foto"]?>" alt="foto" class="img-fluid w-100">
                                                     </div>
                                                     <div class="col-9">
-                                                        <form action="" method="">
+                                                        <form action="../controllers/controladoreditar.php?id=<?=$producto["id"]?>"method="post">
                                                             <div class="mb-3">
                                                                 <label  class="form-label">Product value</label>
-                                                                <input type="text" class="form-control" value="<?= $producto["valor"] ?>">
+                                                                <input type="number" class="form-control" value="<?=$producto["valor"]?>">
                                                             </div>
                                                             <div class="mb-3">
                                                                 <label  class="form-label">Description</label>
-                                                                <input type="text" class="form-control" value="<?= $producto["descripcion"] ?>">
+                                                                <input type="text" class="form-control" value="<?=$producto["descripcion"]?>">
                                                             </div>
-                                                            <button type="submit" class="btn btn-primary">Edit</button>
+                                                            <button type="submit" class="btn btn-primary" name="buttonedit">Edit</button>
                                                         </form>
                                                     </div>
                                                 </div>

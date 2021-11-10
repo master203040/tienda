@@ -48,7 +48,7 @@
 
         public function editar($id){
 
-            $consultaSQL = "UPDATE productos SET valor='$this->valor',descripcion='$this->descripcion',foto='$this->foto' WHERE id='$id'";
+            $consultaSQL="UPDATE productos SET valor='$this->valor',descripcion='$this->descripcion'WHERE id='$id'";
 
             return $consultaSQL;
         }

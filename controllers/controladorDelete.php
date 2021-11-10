@@ -22,7 +22,7 @@
     //5. valido el resultado
     if($resultado){
 
-        $_SESSION['mensaje']="exito elimianndo el jugador";
+        $_SESSION['mensaje']="success removing the product";
 
         header("Location:../views/index.php");
            
