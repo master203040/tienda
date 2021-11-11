@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div class="linea2 text-center text-white">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab odio aspernatur eaque ullam doloremque consequatur dolorem dignissimos voluptatem perferendis asperiores!</p>
+                    <p>this store is only for online purchases is sent anywhere in the world</p>
                 </div>
             </div>
         </header>
@@ -82,36 +82,8 @@
                 <div class="col-md-4" id="cards">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h3 class="card-title ">Sports</h3>
-                            <a href="./views/sports.php"><img src="./public/img/deportes (2).jpg" id="img" class="rounded mx-auto d-block" alt="..."></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" id="cards">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h3 class="card-title ">Technology</h3>
-                            <a href="./views/technology.php"><img src="./public/img/tecno4.jpg" id="img" class="rounded mx-auto d-block" alt="..."></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container p-1">
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-4" id="cards">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h3 class="card-title ">Home appliances</h3>
-                            <a href="./views/homeappliance.php"><img src="./public/img/electro4.jpg" id="img" class="rounded mx-auto d-block" alt="..."></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" id="cards">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h3 class="card-title ">Home and fashion</h3>
-                            <a href="./views/index.php"><img src="./public/img/hogar4.jpg" id="img" class="rounded mx-auto d-block" alt="..."></a>
+                            <h3 class="card-title text-center">click here</h3>
+                            <a href="./views/index.php"><img src="./public/img/logo.jpg" id="img" class="rounded mx-auto d-block" alt="..."></a>
                         </div>
                     </div>
                 </div>

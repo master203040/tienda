@@ -44,7 +44,7 @@
                         Search
                     </button>
                     <div class="linea1 text-center text-white">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab odio aspernatur eaque ullam doloremque consequatur dolorem dignissimos voluptatem perferendis asperiores!</p>
+                        <p>this store is only for online purchases is sent anywhere in the world</p>
                     </div>
                 </div>
             </div>

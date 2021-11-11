@@ -29,7 +29,7 @@
                             <li><a href="#" class="nav-link px-2 link-dark text-white">Customer service</a></li>
                             <li><a href="#" class="nav-link px-2 link-dark text-white">Contact</a></li>
                             <li><a href="../views/registro.php" class="nav-link px-2 link-dark text-white">Enter product </a></li>
-                            <li><a href="#" class="nav-link px-2 link-dark text-white">User register</a></li>
+                            <li><a href="../views/user.php" class="nav-link px-2 link-dark text-white">User register</a></li>
                         </ul>
 
                         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
@@ -121,7 +121,7 @@
                     <li class="ms-3"><a class=" nav-link text-white" href="#">www.theStore.com</a></li>
                 </ul>
                 <p class = "text-white">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi animi ducimus quisquam error officia nulla esse, architecto minus nisi aliquam quis aut, maxime iste! Ipsa!
+                  this store is only for online purchases is sent anywhere in the world
                 </p>
             </footer>
         </div>

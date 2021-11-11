@@ -34,7 +34,7 @@ if(!isset($_SESSION)){
                         <li><a href="#" class="nav-link px-2 link-dark text-white">Offers of the day</a></li>
                         <li><a href="#" class="nav-link px-2 link-dark text-white">Customer service</a></li>
                         <li><a href="#" class="nav-link px-2 link-dark text-white">Contact</a></li>
-                        <li><a href="./views/registro.php" class="nav-link px-2 link-dark text-white">Enter product </a></li>
+                        <li><a href="../views/registro.php" class="nav-link px-2 link-dark text-white">Enter product </a></li>
                         <li><a href="" class="nav-link px-2 link-dark text-white">User register</a></li>
                     </ul>
                     <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
@@ -46,7 +46,7 @@ if(!isset($_SESSION)){
                 </div>
             </div>
             <div class="linea3 text-center text-white">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab odio aspernatur eaque ullam doloremque consequatur dolorem dignissimos voluptatem perferendis asperiores!</p>
+                <p>this store is only for online purchases is sent anywhere in the world</p>
             </div>
         </div>
     </header>
