@@ -1,7 +1,7 @@
 <?php 
 
 
-    class Empleado {
+    class Empleado{
 
 
         //VARIABLES=DATOS=ATRIBUTOS

@@ -18,12 +18,12 @@
         $email=$_POST["email"];
         $edad=$_POST["edad"];
         $descripcion=$_POST["descripcion"];
-        $foto=$_POST["foto"];
+        $fotografia=$_POST["foto"];
 
 
 
         //3. Creo un objeto(variable) del modelo EMPLEADO
-        $empleado=new Empleado($nombre,$apellido,$email,$edad,$descripcion,$foto);
+        $empleado=new Empleado($nombre,$apellido,$email,$edad,$descripcion,$fotografia);
 
     
        //4. Ejecutar el metodo insertar registro de la bd
