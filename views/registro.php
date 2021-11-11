@@ -18,33 +18,32 @@
 </head>
 <body>
     <div class="b-example-divider"></div>
-            <header class="p-3 mb-3 border-bottom bg-dark  fixed-top">
-                <div class="container">
-                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                        <h1 class="text-white">THE STORE<i class="fas fa-shopping-cart"></i></h1>
-                        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                            <li><a href="../home.php" class="nav-link px-2 link-dark text-white">Home</a></li>
-                            <li><a href="#" class="nav-link px-2 link-dark text-white">About us</a></li>
-                            <li><a href="#" class="nav-link px-2 link-dark text-white">Offers of the day</a></li>
-                            <li><a href="#" class="nav-link px-2 link-dark text-white">Customer service</a></li>
-                            <li><a href="#" class="nav-link px-2 link-dark text-white">Contact</a></li>
-                            <li><a href="../views/registro.php" class="nav-link px-2 link-dark text-white">Enter product </a></li>
-                            <li><a href="../views/user.php" class="nav-link px-2 link-dark text-white">User register</a></li>
-                        </ul>
+        <header class="p-3 mb-3 border-bottom bg-dark  fixed-top">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <h1 class="text-white">THE STORE<i class="fas fa-shopping-cart"></i></h1>
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="../home.php" class="nav-link px-2 link-dark text-white">Home</a></li>
+                        <li><a href="#" class="nav-link px-2 link-dark text-white">About us</a></li>
+                        <li><a href="#" class="nav-link px-2 link-dark text-white">Offers of the day</a></li>
+                        <li><a href="#" class="nav-link px-2 link-dark text-white">Customer service</a></li>
+                        <li><a href="#" class="nav-link px-2 link-dark text-white">Contact</a></li>
+                        <li><a href="../views/registro.php" class="nav-link px-2 link-dark text-white">Enter product </a></li>
+                        <li><a href="../views/user.php" class="nav-link px-2 link-dark text-white">User register</a></li>
+                    </ul>
 
-                        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-                        </form>
-                        <button type="button" class="btn btn-primary me-md-2" data-bs-toggle="modal"data-bs-target="#staticBackdrop1">
-                        Search
-                        </button>
-                        </div>
-                        </div>
-                        <div class="linea1 text-center text-white">
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab odio aspernatur eaque ullam doloremque consequatur dolorem dignissimos voluptatem perferendis asperiores!</p>
-                        </div>
+                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                        <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                    </form>
+                    <button type="button" class="btn btn-primary me-md-2" data-bs-toggle="modal"data-bs-target="#staticBackdrop1">
+                    Search
+                    </button>
+                    <div class="linea1 text-center text-white">
+                        <p>this store is only for online purchases is sent anywhere in the world</p>
+                    </div>
                 </div>
-            </header>
+            </div>
+        </header>
     <main>
         <div class="container mt-5 py-5">
             <div class="row d-flex justify-content-center py-5">

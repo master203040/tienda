@@ -44,10 +44,9 @@
                         <button type="button" class="btn btn-primary me-md-2" data-bs-toggle="modal"data-bs-target="#staticBackdrop1">
                         Search
                         </button>
-                        </div>
-                        </div>
                         <div class="linea1 text-center text-white">
                            <p>this store is only for online purchases is sent anywhere in the world<p>
+                        </div>
                     </div>
                 </div>
             </header>
