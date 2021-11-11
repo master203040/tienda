@@ -101,7 +101,7 @@
                                                         <img src="<?=$empleado["foto"]?>" alt="foto" class="img-fluid w-100">
                                                     </div>
                                                     <div class="col-9">
-                                                        <form action="../controllers/controladorEdit.php?id=<?=$empleado["id"]?>"method="POST">
+                                                        <form action=" ../controllers/controladorEditEmpleado.php?id=<?=$empleado["id"]?>"method="POST">
                                                             <div class="mb-3">
                                                                 <label  class="form-label">Name</label>
                                                                 <input type="text" class="form-control" value="<?=$empleado["nombre"]?>">
@@ -114,7 +114,7 @@
                                                                 <label  class="form-label">Description</label>
                                                                 <input type="text" class="form-control" value="<?=$empleado["descripcion"]?>">
                                                             </div>
-                                                            <button type="submit"class="btn btn-primary" name="botonEdit">Edit</button>
+                                                            <button type="submit"class="btn btn-primary" name="botonEditar">Edit</button>
                                                         </form>
                                                     </div>
                                                 </div>

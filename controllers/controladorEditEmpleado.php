@@ -5,22 +5,22 @@
     }
 
     //1. Incluir el modelo de la BD
-    //   Incluir el modelo Producto
+    //   Incluir el modelo Empleado
     include("../models/BaseDatos.php");
     include("../models/Empleado.php");
 
-    if(isset($_POST["botonEdit"])){
+    if(isset($_POST["botonEditar"])){
 
         //Recibo los datos a editar
         $nombre=$_POST["nombre"];
-        $foto=$_POST["foto"];
         $descripcion=$_POST["descripcion"];
+        $foto=$_POST["foto"];
 
         //Recibo el id
         $id=$_GET["id"];
        
 
-        // Creo un objeto(variable) del modelo Producto
+        // Creo un objeto(variable) del modelo EMPLEADO
         $empleado=new Empleado($nombre,null,null,null,$descripcion,$foto);
 
     
@@ -31,13 +31,13 @@
        //5. valido el resultado
        if($resultado){
 
-        $_SESSION['mensaje']="success editing record";
+           $_SESSION['mensaje']="success editing record";
 
-        header("Location:../views/listaempleado.php");
+           header("Location:../views/listaempleado.php");
            
 
        }else{
-        echo("upss... Tenemos problemas para registrar datos");
+           echo("upss... Tenemos problemas para registrar datos");
        }
         
         
