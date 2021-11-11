@@ -18,7 +18,7 @@
 
         //Recibo el id
         $id=$_GET["id"];
-       
+        
 
         // Creo un objeto(variable) del modelo EMPLEADO
         $empleado=new Empleado($nombre,null,null,null,$descripcion,$foto);
@@ -29,16 +29,16 @@
        $resultado=$baseDatos->insertarRegistro($empleado->editar($id));
 
        //5. valido el resultado
-       if($resultado){
+        if($resultado){
 
            $_SESSION['mensaje']="success editing record";
 
            header("Location:../views/listaempleado.php");
            
 
-       }else{
+        }else{
            echo("upss... Tenemos problemas para registrar datos");
-       }
+        }
         
         
 

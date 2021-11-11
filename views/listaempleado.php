@@ -104,15 +104,15 @@
                                                         <form action=" ../controllers/controladorEditEmpleado.php?id=<?=$empleado["id"]?>"method="POST">
                                                             <div class="mb-3">
                                                                 <label  class="form-label">Name</label>
-                                                                <input type="text" class="form-control" value="<?=$empleado["nombre"]?>">
+                                                                <input type="text" class="form-control" value="<?=$empleado["nombre"]?>"name="nombre">
                                                             </div>
                                                             <div class="mb-3">
                                                                 <label  class="form-label">Photography</label>
-                                                                <input type="text" class="form-control" value="<?=$empleado["foto"]?>">
+                                                                <input type="text" class="form-control" value="<?=$empleado["foto"]?>"name="foto">
                                                             </div>
                                                             <div class="mb-3">
                                                                 <label  class="form-label">Description</label>
-                                                                <input type="text" class="form-control" value="<?=$empleado["descripcion"]?>">
+                                                                <input type="text" class="form-control" value="<?=$empleado["descripcion"]?>"name="descripcion">
                                                             </div>
                                                             <button type="submit"class="btn btn-primary" name="botonEditar">Edit</button>
                                                         </form>
