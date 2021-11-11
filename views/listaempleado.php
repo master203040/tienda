@@ -2,6 +2,11 @@
     
     include("../controllers/controladorlistaempleados.php");
 
+    if(!isset($_SESSION)){
+    session_start();
+   }
+
+
 ?>
 
 
@@ -56,7 +61,7 @@
                                     <p class="card-text">Age: <?php echo($empleado["edad"])?></p>
                                     <p class="card-text lh-1">Description: <?php echo($empleado["descripcion"])?></p>
                                     <a href="#" class="btn btn-light"data-bs-toggle="modal" data-bs-target="#delete<?=$empleado["id"]?>"><i class="fas fa-trash-alt"></i></a>
-                                    <a href="#" class="btn btn-light"data-bs-toggle="modal" data-bs-target="#editar<?=$empleado["id"]?>"><i class="fas fa-pen"></i></a>
+                                    <a href="#" class="btn btn-light"data-bs-toggle="modal" data-bs-target="#edit<?=$empleado["id"]?>"><i class="fas fa-pen"></i></a>
                                 </div> 
                             </div>
                             <!-- Modal eliminar -->
@@ -74,7 +79,7 @@
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
-                                                <a href="../controllers/controladorEliminar.php?id=<?= $empleado["id"]?>" class="btn btn-danger">to accept</a>
+                                                <a href="../controllers/controladorEliminar.php?id=<?=$empleado["id"]?>" class="btn btn-danger">to accept</a>
                                             </div>
                                         </div>
                                     </div>
@@ -83,7 +88,7 @@
                             
                             <!-- Modal editar -->
                             <section>
-                                <div class="modal fade" id="editar<?=$producto["id"]?>" tabindex="-1">
+                                <div class="modal fade" id="edit<?=$empleado["id"]?>" tabindex="-1">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header bg-secondary text-white">
@@ -93,19 +98,23 @@
                                             <div class="modal-body">
                                                 <div class="row">
                                                     <div class="col-3">
-                                                        <img src="<?=$producto["foto"]?>" alt="foto" class="img-fluid w-100">
+                                                        <img src="<?=$empleado["foto"]?>" alt="foto" class="img-fluid w-100">
                                                     </div>
                                                     <div class="col-9">
-                                                        <form action="../controllers/controladoreditar.php?id=<?=$producto["id"]?>"method="POST">
+                                                        <form action="../controllers/controladorEdit.php?id=<?=$empleado["id"]?>"method="POST">
                                                             <div class="mb-3">
-                                                                <label  class="form-label">Product value</label>
-                                                                <input type="number" class="form-control" value="<?=$producto["valor"]?>">
+                                                                <label  class="form-label">Name</label>
+                                                                <input type="text" class="form-control" value="<?=$empleado["nombre"]?>">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label  class="form-label">Photography</label>
+                                                                <input type="text" class="form-control" value="<?=$empleado["foto"]?>">
                                                             </div>
                                                             <div class="mb-3">
                                                                 <label  class="form-label">Description</label>
-                                                                <input type="text" class="form-control" value="<?=$producto["descripcion"]?>">
+                                                                <input type="text" class="form-control" value="<?=$empleado["descripcion"]?>">
                                                             </div>
-                                                            <button type="submit"class="btn btn-primary" name="boton">Edit</button>
+                                                            <button type="submit"class="btn btn-primary" name="botonEdit">Edit</button>
                                                         </form>
                                                     </div>
                                                 </div>
@@ -119,10 +128,43 @@
                 </div>
             </div>      
         </main>
-    </main>
+        <section>
+            <?php if(isset($_SESSION['mensaje'])):?>
+                <div class="modal fade" id="modal" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-secondary text-white">
+                                <h5 class="modal-title" id="exampleModalLabel">The Store<i class="fas fa-shopping-cart"></i></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-dark">
+                                <h5><?php echo($_SESSION['mensaje'])?></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <?php unset($_SESSION['mensaje'])?>
+            <?php endif ?>
+    </section>
         
+     <div class="b-example-divider"></div>
+        <div class="container-flur py-5 " >
+            <footer class="d-flex justify-content-center align-items-center bg-white">
+                <div class="col-md-4 text-center">
+                   <span class="text-dark fw-bold">&copy; 2021 Company, Inc </span>
+                </div>
+                <ul class="nav col-md-4 justify-content-lef gb-dark">
+                    <li class="ms-3"><a class="text-dark fw-bold" href="#"><i class="fab fa-github"></i></a></li>
+                    <li class="ms-3"><a class="text-dark fw-bold" href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li class="ms-3"><a class=" nav-link text-dark fw-bold" href="#">www.theStore.com</a></li>
+                </ul>
+                <p class = "text-dark fw-bold lh-sm">
+                    La Planta Central de los Envio esta en la Ciudad de Medellin-Colombia calle 24 #23-584 Autopista Norte via a Barbosa
+                </p>
+            </footer>
+        </div>   
     
-    <script type ="module" src="../public/js/modal2.js"></script>
+    <script type ="module" src="../public/js/modal1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js"
     integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA=="
     crossorigin="anonymous" referrerpolicy="no-referrer">

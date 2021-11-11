@@ -7,7 +7,7 @@
     //1. Incluir el modelo de la BD
     //    Incluir el modelo Producto
     include("../models/BaseDatos.php");
-    include("../models/Producto.php");
+    include("../models/Empleado.php");
 
     //2. Recibir el id a eliminar
     $id=$_GET["id"];
