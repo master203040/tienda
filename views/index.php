@@ -144,11 +144,11 @@
                                                         <form action="../controllers/controladoreditar.php?id=<?=$producto["id"]?>"method="POST">
                                                             <div class="mb-3">
                                                                 <label  class="form-label">Product value</label>
-                                                                <input type="number" class="form-control" value="<?=$producto["valor"]?>">
+                                                                <input type="number" class="form-control" value="<?=$producto["valor"]?>" name="valor">
                                                             </div>
                                                             <div class="mb-3">
                                                                 <label  class="form-label">Description</label>
-                                                                <input type="text" class="form-control" value="<?=$producto["descripcion"]?>">
+                                                                <input type="text" class="form-control" value="<?=$producto["descripcion"]?>" name="descripcion">
                                                             </div>
                                                             <button type="submit"class="btn btn-primary" name="boton">Edit</button>
                                                         </form>

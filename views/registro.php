@@ -86,6 +86,7 @@
                             <input type="text"class="form-control" name="descripcion">
                         </div>
                         <button type="submit" class="btn btn-primary" name="boton">Check in</button>
+                        <a href="../views/index.php" class="nav-link text-primary">View Logs</a>
                     </form>
                 </div> 
             </div>
